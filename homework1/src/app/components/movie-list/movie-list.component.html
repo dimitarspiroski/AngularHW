@@ -1,0 +1,14 @@
+<h2>{{ title }}</h2>
+<app-movie
+  [title]="movieTitle"
+  (sendMovieToParent)="getMovieData($event)"
+></app-movie>
+<div>
+  <ul>
+    <li>Name: {{ movie.name }}</li>
+    <li>Release Date: {{ movie.releaseDate }}</li>
+    <li>Producer: {{ movie.producerName }}</li>
+    <li>Genre: {{ movie.genre }}</li>
+    <li>Rating: {{ movie.rating }}</li>
+  </ul>
+</div>
