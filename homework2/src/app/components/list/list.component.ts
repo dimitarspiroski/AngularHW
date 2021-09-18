@@ -15,7 +15,7 @@ export class ListComponent implements OnInit {
       rating: 0.75,
       price: 59.99,
       shortDescription:
-        'The only thing missing in this Dishonored/Edge of Tomorrow   offspring is Tom Cruise.',
+        'The only thing missing in this Dishonored/Edge of Tomorrow offspring is Tom Cruise.',
       genre: 'FPS',
       publisher: 'Bethesda Softworks',
       developer: 'Arkane Studios',
