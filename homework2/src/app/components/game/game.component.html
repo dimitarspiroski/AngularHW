@@ -1,0 +1,27 @@
+<div class="card m-3" [ngClass]="game.genre | lowercase">
+  <div>
+    <h4>{{ game.title | uppercase }} - {{ game.title | abbreviate }}</h4>
+    <h5>Rating: {{ game.rating | percent }}</h5>
+
+    <ul>
+      <li>Release Date: {{ game.releaseDate | date }}</li>
+      <li>Price: {{ game.price | currency: "EUR" }}</li>
+      <li>Genre: {{ game.genre }}</li>
+      <li [ngStyle]="{ color: 'white', fontSize: '16px' }">
+        Publisher: {{ game.publisher }}
+      </li>
+      <li>Developer: {{ game.developer }}</li>
+    </ul>
+    <div>
+      <p *ngIf="descriptionShown">{{ game.shortDescription }}</p>
+      <!-- <p>{{ descriptionShown ? game.shortDescription : null }}</p> -->
+    </div>
+    <button
+      class="btn btn-warning mt-3 border border-dark"
+      type="button"
+      (click)="toggleDescription()"
+    >
+      {{ descriptionShown ? "Hide Description" : "Show Description" }}
+    </button>
+  </div>
+</div>

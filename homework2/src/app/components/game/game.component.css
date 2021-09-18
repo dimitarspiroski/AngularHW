@@ -1,0 +1,19 @@
+.action {
+  background-color: #3d5a80;
+  color: #ffc107;
+}
+
+.fps {
+  background-color: #293241;
+  color: #ffc107;
+}
+
+.survival {
+  background-color: black;
+  color: #ffc107;
+}
+
+.card {
+  display: flex;
+  width: 250px;
+}
