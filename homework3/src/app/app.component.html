@@ -1,0 +1,28 @@
+<header class="header">
+  <h1 class="header__brand">Rent-a-car</h1>
+</header>
+<main class="main">
+  <hr />
+  <form class="form">
+    <label for="carId">ID: </label>
+    <input type="text" id="carId" />
+    <label for="carBrand">BRAND: </label>
+    <input type="text" id="carBrand" />
+    <label for="carModel">MODEL: </label>
+    <input type="text" id="carModel" />
+    <label for="carRating">RATING: </label>
+    <input type="text" id="carRating" />
+    <button type="button" (click)="addCar($event)">ADD CAR</button>
+  </form>
+  <hr />
+  <div class="order__showcase">
+    <app-orders
+      *ngFor="let orderItem of orders"
+      [boundOrder]="orderItem"
+      (ngDisplayCar)="displayCar($event)"
+    ></app-orders>
+  </div>
+  <div class="car__showcase">
+    <app-car *ngIf="displayCarFlag" [selectedCar]="carToDisplay"></app-car>
+  </div>
+</main>
