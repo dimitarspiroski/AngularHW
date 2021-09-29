@@ -1,0 +1,18 @@
+<h2 class="title">Cars Available:</h2>
+<div class="card__container">
+  <div class="card" *ngFor="let car of cars">
+    <h3 class="card__title">
+      Car: {{ car.name }} <span class="card__model">{{ car.model }}</span>
+    </h3>
+    <img src="{{ car.imgUrl }}" alt="" class="card__img" />
+    <p class="card__year">Year: {{ car.yearOfProduction | date: "yyyy" }}</p>
+    <p class="card__price">
+      Price: {{ car.price | currency: "USD" }}/<span class="card_price-number"
+        >day</span
+      >
+    </p>
+    <button type="button" class="card__button" (click)="orderedCars(car)">
+      Order Car
+    </button>
+  </div>
+</div>

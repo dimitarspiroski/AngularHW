@@ -1,0 +1,30 @@
+.nav {
+  background-color: #3fb0ac;
+  display: flex;
+  justify-content: end;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.list__container {
+  display: flex;
+  flex-direction: row;
+  margin-right: 2rem;
+}
+
+.list__container > li {
+  font-size: 1.4rem;
+  margin-right: 1.5rem;
+  color: #fcfcfc;
+  border-radius: 6px;
+  transition: background-color 400ms ease;
+  cursor: pointer;
+  padding: 0.2rem 0.6rem;
+}
+
+.list__container > li:hover {
+  background-color: #173e43;
+}
+
+.list__container {
+  list-style: none;
+}

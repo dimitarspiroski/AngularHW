@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container__contact-card {
+  display: flex;
+  padding: 0 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2rem 2rem;
+  height: 30rem;
+  width: 30rem;
+  border: 1px solid #3fb0ac;
+  background-color: #fcfcfc;
+  color: #173e45;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(63, 176, 172, 0.2);
+}
+
+.card__img {
+  width: 80px;
+}
+
+.container__card-first {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-first {
+  margin-top: 4rem;
+  text-align: center;
+  border: 1px solid #3fb0ac;
+  height: 10rem;
+  width: 68.2rem;
+  color: #173e45;
+  background-color: #fcfcfc;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(63, 176, 172, 0.2);
+}
+
+.card__email {
+  color: #3fb0ac;
+}
+
+.card__phone-number {
+  color: #3fb0ac;
+}

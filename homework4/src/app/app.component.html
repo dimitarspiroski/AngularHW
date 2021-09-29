@@ -1,0 +1,34 @@
+<nav class="nav">
+  <ul class="list__container">
+    <li
+      class="list__item"
+      routerLink=""
+      routerLinkActive="list__item-active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      Home
+    </li>
+    <li
+      class="list__item"
+      routerLink="cars"
+      routerLinkActive="list__item-active"
+    >
+      Cars
+    </li>
+    <li
+      class="list__item"
+      routerLink="ordered-cars"
+      routerLinkActive="list__item-active"
+    >
+      Ordered Cars
+    </li>
+    <li
+      class="list__item"
+      routerLink="contact"
+      routerLinkActive="list__item-active"
+    >
+      Contact
+    </li>
+  </ul>
+</nav>
+<router-outlet></router-outlet>

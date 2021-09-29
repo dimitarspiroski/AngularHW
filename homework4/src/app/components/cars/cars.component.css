@@ -1,0 +1,70 @@
+.title {
+  display: flex;
+  justify-content: center;
+  color: #173e43;
+  margin-top: 4rem;
+}
+
+.card__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 1rem;
+  padding: 1rem 1rem;
+  border: 2px solid rgb(63, 176, 172, 0.4);
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(63, 176, 172, 0.4);
+}
+
+.card__title {
+  color: #173e43;
+}
+
+.card__title > .card__model {
+  color: #3fb0ac;
+}
+
+.card__img {
+  width: 220px;
+}
+
+.card__price {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #173e43;
+}
+
+.card_price-number {
+  color: #3fb0ac;
+}
+
+.card__year {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #173e43;
+}
+
+.card__button {
+  background-color: #fff;
+  border: 1px solid #3fb0ac;
+  color: #3fb0ac;
+  font-size: 1rem;
+  width: 10.5rem;
+  height: 2rem;
+  cursor: pointer;
+  transition: all 400ms ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.card__button:hover {
+  background-color: #3fb0ac;
+  color: #fff;
+}
